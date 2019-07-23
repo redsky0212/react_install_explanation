@@ -1,0 +1,58 @@
+====================================================================
+# react js 프로젝트 처음 시작 방법
+====================================================================
+
+** react참조 (https://ko.reactjs.org/docs/getting-started.html)
+
+** nodejs, npm 설치(nodejs설치하면 npm자동설치)
+
+** react 설치 (create React App)(https://github.com/facebook/create-react-app)
+  * npm install -g create-react-app@버전번호 (global로 설치해놓고 이 후 프로젝트를 생성해서 실행 할 수 있다.)
+  * react프로젝트 생성 ( create-react-app 프로젝트명 )
+    - 원하는 폴더로 이동한 다음. ( create-react-app . )  실행하면 막 설치한다. (.)은 현재 디렉토리 위치라는 뜻.
+
+** react app 실행
+  * create-react-app 을 이용하여 설치 되었으면 cmd 창에서 해당폴더로 이동후 ( npm run start ) 하면 app이 실행됨.
+
+** App.js 변경
+  * App.js파일 내부의 code를 함수방식에서 class방식으로 변경.
+    ------------------------------------------------------------------------------
+                                                      import React, {Component} from 'react';
+    function App() {                                  class App extends Component {
+      return (                                          render() {
+        <div className="App">       ------>                 return (
+        </div>                                                 <div className="App">
+      );                                                       </div>
+    }                                                       };
+                                                        }
+                                                      }
+    ------------------------------------------------------------------------------
+
+** react 빌드
+  * 해당 폴더에서 ( npm run build )
+    - build폴더가 생성되며 내용 파일이 생성 됩니다.
+
+** react 컴포넌트 만들기 기본
+  * Component를 만드는 가장 기본이 되는 JSX템플릿 code
+    - 내부 html 코드는 JSX코드이다.
+    ----------------------------------------------
+    class 컴포넌트이름 extends Component {
+      render() {
+        return (
+          <div></div>
+        );
+      }
+    }
+    -----------------------------------------------
+  * 만들어진 Component를 사용할때는 <컴포넌트이름></컴포넌트이름> 와 같이 사용.
+
+
+** props (https://reactjs.org/docs/components-and-props.html)
+  * 컴포넌트를 사용하는 JSX코드에서 속성으로 값을 입력한다. <Subject title="WEB" sub="world wide web!"></Subject>
+  * 실제 컴포넌트 내부의 JSX코드에 속성으로 넘어온 값을 셋팅한다. <h1>{this.props.title}</h1>{this.props.sub}
+
+** React Developer Tools (https://reactjs.org/community/debugging-tools.html)
+  * react개발 debugging툴 chrome 에 설치
+
+** Component 파일로 분리
+  * 
