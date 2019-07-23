@@ -1,5 +1,5 @@
 ====================================================================
-# react js 프로젝트 처음 시작 방법
+# react js 프로젝트 처음 시작 방법 (https://github.com/redsky0212/react_install_explanation.git)
 ====================================================================
 
 ** react참조 (https://ko.reactjs.org/docs/getting-started.html)
